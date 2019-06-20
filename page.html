@@ -1,0 +1,167 @@
+<html>
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("#123").on({
+        mouseenter: function(){
+          $(this).css("background-color", "lightblue");
+        },
+        mouseleave: function(){
+          $(this).css("background-color", "lightgray");
+        },
+      });
+    });</script>
+
+    <script>
+    $(document).ready(function(){
+      $("#ha").on({
+        mouseenter: function(){
+          $(this).css("background-color", "lightblue");
+        },
+        mouseleave: function(){
+          $(this).css("background-color", "lightgray");
+        },
+      });
+    });</script>
+
+    <script>
+    $(document).ready(function(){
+      $("#he").mouseover(function(){
+        $("#p").hide(1000);
+        alert(" entered to Uki!");
+      });
+    });
+    </script>
+
+
+    <script>
+    $(document).ready(function(){
+      $("#hide0").click(function(){
+        $("p").hide();
+      });
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("ul").hide();
+      });
+      $("#show").click(function(){
+        $("ul").show();
+      });
+    });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    </script>
+<style>
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: lightblue;
+  border: solid 1px white;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+.round{
+  border-radius: 25px;
+height: 250;
+width: 700;
+background: lightblue;
+}
+
+.round1{
+  border-radius: 25px;
+height: 25;
+width: 1500;
+background: lightblue;
+text-align: center;
+
+}
+
+.course{
+  border-radius: 25px;
+height: 250;
+width: 400;
+background: gray;
+}
+</style>
+</head>
+<body><center>
+  <a href="">Home</a>
+  <a href="form.html">Form</a>
+  <a href="table.html">Timetable</a>
+</center>
+<center>
+<img src="123.png" style="width: 1000px;">
+</center>
+<center>
+  <div id="flip">Welcome to Uki</div>
+  <div id="panel">Hai Uki!</div>
+<br><br>
+<div class="round" >
+  <br>
+<h3 id="he">  Welcome to Uki Stepping stone to tech life</h3>
+<h4>It is a full scholarship based Accelerator program for Coding in Jaffna,
+Sri Lanka targeting students who has completed Advanced Level examinations and don’t
+have access to university education or any other form of vocational education. It is aimed to pro
+vide the necessary training to enter Computer Software industry or to start an IT startup.
+This is a joint initiative by Yarl IT Hub and SERVE Foundation. Yarl IT Hub has
+ been functioning for the last five years as a not for profit social
+ enterprise focusing on technology entrepreneurship in northern Sri Lanka and
+ SERVE Foundation is a four year old foundation focusing on using technology
+ to uplift secondary education standards in rural schools in northern Sri Lanka.</h4>
+</div>
+
+</center>
+
+<br>
+<br>
+<div class="row">
+  <div class="col-sm-6">
+
+<div class="course"><br>
+  <h3 id="123">COURSE</h3>
+  Our vision is to be a leading centre of excellence in teaching, learning research and scholarship
+  <ul>
+<li>Programming</li>
+<li>Basic Business Skills</li>
+<li>Spoken English and Communication Skills</li>
+<li>Personal Coaching</li>
+  </ul>
+  <button id="hide">Hide</button>
+<button id="show">Show</button>
+</div>
+</div>
+<div class="col-sm-6" align="right">
+<div class="course" style="width:450px;"><br>
+<h3 id="ha" align="left">  CODING ACCELERATOR PROGRAM</h3>
+<p style="text-align:left;">This Coding Accelerator program is an intensive training on full-stack development with server-side Node.js and modern, client-side, front-end libraries and frameworks.Throughout this intensive course the student will study professional software development techniques and practices as he/she advances his/her skills on JavaScript.
+</p><br>
+<button id="hide0" style="float: left;">details</button>
+</div>
+</div>
+</div>
+<br>
+<center>
+<div class="round1">
+  2017 @ Uki All Rights Reserved. A joint initiative by Yarl IT Hub and SERVE foundation
+</div>
+</center>
+</body>
+</html>
